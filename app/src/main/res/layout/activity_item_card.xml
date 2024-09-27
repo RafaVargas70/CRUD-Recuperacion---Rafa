@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Campo de texto (EditText) -->
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ingresa texto"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <!-- Imagen para actualizar -->
+        <ImageView
+            android:id="@+id/imgActualizar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/actualizar"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Actualizar"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center"/>
+
+        <!-- Imagen para eliminar -->
+        <ImageView
+            android:id="@+id/imgEliminar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/eliminar"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Eliminar"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
